@@ -3,7 +3,6 @@
 [![Website](https://img.shields.io/badge/website-ghostlyinc.com-0969da?logo=firefoxbrowser&logoColor=white)](https://ghostlyinc.com/en-us/tools/pixel-press/)
 [![Windows Store](https://img.shields.io/badge/Windows-Microsoft%20Store-0078d4?logo=microsoftstore&logoColor=white)](https://apps.microsoft.com/detail/9NRMXB13BBN7)
 [![Ubuntu .deb](https://img.shields.io/github/v/release/Nix1983/PixelPress-Releases?label=Ubuntu%20%2F%20Debian%20.deb&logo=ubuntu&logoColor=white&color=e95420)](https://github.com/Nix1983/PixelPress-Releases/releases/latest)
-[![Linux downloads](https://img.shields.io/github/downloads/Nix1983/PixelPress-Releases/total?label=Linux%20downloads&logo=linux&logoColor=white&color=2ea44f)](https://github.com/Nix1983/PixelPress-Releases/releases)
 [![License](https://img.shields.io/badge/license-proprietary-6f42c1)](#license)
 
 Public downloads for Pixel Press, a local image optimizer from Ghostly Inc.

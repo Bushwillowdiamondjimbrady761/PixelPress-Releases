@@ -46,15 +46,11 @@ runtime.
 Download and install the latest `PixelPress-linux-x64.deb` package:
 
 ```bash
-cd ~/Downloads
+wget -O /tmp/PixelPress-linux-x64.deb https://github.com/Nix1983/PixelPress-Releases/releases/latest/download/PixelPress-linux-x64.deb
 ```
 
 ```bash
-wget -O PixelPress-linux-x64.deb https://github.com/Nix1983/PixelPress-Releases/releases/latest/download/PixelPress-linux-x64.deb
-```
-
-```bash
-sudo apt install ./PixelPress-linux-x64.deb
+sudo apt install /tmp/PixelPress-linux-x64.deb
 ```
 
 Start Pixel Press from your application launcher, or run:
@@ -69,8 +65,11 @@ Download the newest `.deb` package from the latest release and install it over
 the existing version:
 
 ```bash
-cd ~/Downloads
-sudo apt install ./PixelPress-linux-x64.deb
+wget -O /tmp/PixelPress-linux-x64.deb https://github.com/Nix1983/PixelPress-Releases/releases/latest/download/PixelPress-linux-x64.deb
+```
+
+```bash
+sudo apt install /tmp/PixelPress-linux-x64.deb
 ```
 
 ## Uninstall

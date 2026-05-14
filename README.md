@@ -2,29 +2,45 @@
 
 [![Website](https://img.shields.io/badge/website-ghostlyinc.com-0969da?logo=firefoxbrowser&logoColor=white)](https://ghostlyinc.com/en-us/tools/pixel-press/)
 [![Windows Store](https://img.shields.io/badge/Windows-Microsoft%20Store-0078d4?logo=microsoftstore&logoColor=white)](https://apps.microsoft.com/detail/9NRMXB13BBN7)
-[![Ubuntu .deb](https://img.shields.io/github/v/release/Nix1983/PixelPress-Releases?label=Ubuntu%20.deb&logo=ubuntu&logoColor=white&color=e95420)](https://github.com/Nix1983/PixelPress-Releases/releases/latest)
+[![Ubuntu .deb](https://img.shields.io/github/v/release/Nix1983/PixelPress-Releases?label=Ubuntu%20%2F%20Debian%20.deb&logo=ubuntu&logoColor=white&color=e95420)](https://github.com/Nix1983/PixelPress-Releases/releases/latest)
 [![Linux downloads](https://img.shields.io/github/downloads/Nix1983/PixelPress-Releases/total?label=Linux%20downloads&logo=linux&logoColor=white&color=2ea44f)](https://github.com/Nix1983/PixelPress-Releases/releases)
+[![License](https://img.shields.io/badge/license-proprietary-6f42c1)](#license)
 
-## About
+Public downloads for Pixel Press, a local image optimizer from Ghostly Inc.
 
-Pixel Press is a local image optimizer from Ghostly Inc. It makes images smaller
-on your own machine, so your pictures stay local: no upload, no cloud
-processing, no account required.
+Pixel Press compresses images on your own machine. Your files stay local:
+no upload, no cloud processing, no account required.
 
-Learn more on the
-[Pixel Press website](https://ghostlyinc.com/en-us/tools/pixel-press/).
+## Get Pixel Press
 
-## Downloads
-
-| Platform | Recommended download |
+| Platform | Download |
 |:--|:--|
 | Windows | [Install from Microsoft Store](https://apps.microsoft.com/detail/9NRMXB13BBN7) |
 | Ubuntu / Debian Linux | [Download the latest `.deb` package](https://github.com/Nix1983/PixelPress-Releases/releases/latest) |
-| Website | [Pixel Press product page](https://ghostlyinc.com/en-us/tools/pixel-press/) |
+| Product page | [ghostlyinc.com/en-us/tools/pixel-press](https://ghostlyinc.com/en-us/tools/pixel-press/) |
 
-This repository intentionally contains only public release notes and downloadable
-Linux release artifacts. The Windows version is distributed through the
-Microsoft Store.
+Windows users should install Pixel Press from the Microsoft Store. Linux builds
+are published here as public release artifacts.
+
+## What It Does
+
+- Batch-compress local images without sending them anywhere.
+- Add individual files or whole folders.
+- Convert supported source images to modern web-friendly formats.
+- Choose WebP and/or AVIF output.
+- Keep unsupported or broken files out of the conversion instead of crashing.
+- Save optimized files into a separate output folder.
+
+## Supported Formats
+
+| Direction | Formats |
+|:--|:--|
+| Input | JPEG, JPG, PNG, WebP, AVIF |
+| Output | WebP, AVIF |
+
+Available formats can depend on the bundled ImageMagick runtime used by the
+build. The app only enables output formats that are supported by the current
+runtime.
 
 ## Ubuntu / Debian Installation
 
@@ -49,6 +65,7 @@ Download the newest `.deb` package from the latest release and install it over
 the existing version:
 
 ```bash
+cd ~/Downloads
 sudo apt install ./PixelPress-linux-x64.deb
 ```
 
@@ -58,8 +75,15 @@ sudo apt install ./PixelPress-linux-x64.deb
 sudo apt remove pixelpress
 ```
 
-## Notes
+## About This Repository
 
-- Linux packages are currently published as `amd64` `.deb` builds.
-- Windows users should use the Microsoft Store version.
-- The application source is not published in this release repository.
+This repository intentionally contains only public release notes and downloadable
+Linux release artifacts. The application source code lives in a private
+repository.
+
+## License
+
+Pixel Press is proprietary software by Ghostly Inc. This release repository is
+not an open-source source-code repository, and no open-source license is granted
+for the application source or binaries unless a separate license agreement says
+otherwise.

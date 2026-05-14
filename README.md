@@ -47,7 +47,13 @@ Download and install the latest `PixelPress-linux-x64.deb` package:
 
 ```bash
 cd ~/Downloads
+```
+
+```bash
 wget -O PixelPress-linux-x64.deb https://github.com/Nix1983/PixelPress-Releases/releases/latest/download/PixelPress-linux-x64.deb
+```
+
+```bash
 sudo apt install ./PixelPress-linux-x64.deb
 ```
 

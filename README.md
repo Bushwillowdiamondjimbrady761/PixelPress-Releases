@@ -43,12 +43,11 @@ runtime.
 
 ## Ubuntu / Debian Installation
 
-Download `PixelPress-linux-x64.deb` from the
-[latest release](https://github.com/Nix1983/PixelPress-Releases/releases/latest),
-then install it with:
+Download and install the latest `PixelPress-linux-x64.deb` package:
 
 ```bash
 cd ~/Downloads
+wget -O PixelPress-linux-x64.deb https://github.com/Nix1983/PixelPress-Releases/releases/latest/download/PixelPress-linux-x64.deb
 sudo apt install ./PixelPress-linux-x64.deb
 ```
 

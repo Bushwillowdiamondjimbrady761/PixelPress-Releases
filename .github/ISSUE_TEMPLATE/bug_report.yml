@@ -15,7 +15,7 @@ body:
         Do not upload private photos, customer files, license details,
         passwords, or other secrets.
 
-        [troubleshooting]: https://github.com/Nix1983/PixelPress-Releases/wiki/Troubleshooting
+        [troubleshooting]: /Nix1983/PixelPress-Releases/wiki/Troubleshooting
 
   - type: dropdown
     id: platform

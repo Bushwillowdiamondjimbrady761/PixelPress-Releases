@@ -10,7 +10,9 @@ body:
       value: |
         Thanks for reporting a Pixel Press issue.
 
-        Before submitting, please check the [Troubleshooting guide](https://github.com/Nix1983/PixelPress-Releases/wiki/Troubleshooting). Do not upload private photos, customer files, license details, passwords, or other secrets.
+        Before submitting, please check the [Troubleshooting guide](https://github.com/Nix1983/PixelPress-Releases/wiki/Troubleshooting).
+
+        Do not upload private photos, customer files, license details, passwords, or other secrets.
 
   - type: dropdown
     id: platform
@@ -49,7 +51,6 @@ body:
         - Quality settings
         - Windows Free / Pro limit
         - Microsoft Store purchase
-        - Snake challenge
         - Linux desktop behavior
         - Documentation
         - Something else
@@ -90,7 +91,7 @@ body:
     id: input_details
     attributes:
       label: Input details
-      description: Describe the kind of images involved without uploading private originals.
+      description: Describe the kind of images involved without uploading private or sensitive originals.
       placeholder: |
         File types: JPEG, PNG, WebP, AVIF
         Approximate image count:
@@ -134,5 +135,5 @@ body:
       options:
         - label: I checked the Troubleshooting guide.
           required: true
-        - label: I removed or avoided uploading private images, passwords, license details, and other secrets.
+        - label: I removed or avoided uploading private images, sensitive screenshots, passwords, license details, and other secrets.
           required: true

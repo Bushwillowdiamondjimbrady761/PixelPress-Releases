@@ -10,7 +10,11 @@ body:
       value: |
         Thanks for suggesting an improvement.
 
-        Feature requests are most useful when they explain the image workflow, the current friction, and what a better Pixel Press experience would look like.
+        Feature requests are most useful when they explain the image workflow,
+        the current friction, and what a better Pixel Press experience would
+        look like.
+
+        Please do not upload private photos, customer files, license details, passwords, or other secrets.
 
   - type: dropdown
     id: platform
@@ -81,5 +85,5 @@ body:
       options:
         - label: This is a user-facing request, not a request for source code or private implementation details.
           required: true
-        - label: I removed or avoided uploading private images, passwords, license details, and other secrets.
+        - label: I removed or avoided uploading private images, sensitive screenshots, passwords, license details, and other secrets.
           required: true

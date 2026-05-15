@@ -6,9 +6,12 @@
 [![User Wiki](https://img.shields.io/badge/docs-user%20wiki-2ea44f)](https://github.com/Nix1983/PixelPress-Releases/wiki)
 [![License](https://img.shields.io/badge/license-proprietary-6f42c1)](#license)
 
-Pixel Press is a desktop app for making local images smaller without uploading
-them. Add files or folders, choose WebP and/or AVIF output, tune quality, and
-write optimized files into a separate output folder.
+Pixel Press is a local desktop image optimizer for turning JPEG, PNG, WebP, and
+AVIF files into smaller WebP or AVIF output. Your images stay on your machine,
+there are no uploads, and original files stay untouched.
+
+Perfect for website images, screenshots, product folders, and quick batch
+optimization before publishing.
 
 This repository is the public release home for Pixel Press. It contains Linux
 release downloads, release notes, issue forms, and user documentation. The
@@ -117,12 +120,12 @@ them as a failed conversion for the whole batch.
 
 ## Platform Notes
 
-Windows users should install Pixel Press from the Microsoft Store. The Store also
-handles Pixel Press Pro purchases and updates.
+Windows users should install Pixel Press from the Microsoft Store. The Store
+also handles Pixel Press Pro purchases and updates.
 
-Ubuntu/Debian users can install the `.deb` package from this repository. Linux
-builds are unlimited for normal batch conversion and do not require a Microsoft
-Store purchase.
+Ubuntu/Debian users can install the `.deb` package from this repository. The
+Linux release currently has its own release behavior and does not use Microsoft
+Store purchases.
 
 On Windows, drag and drop is supported. On Linux, use the file and folder picker
 buttons from inside the app.

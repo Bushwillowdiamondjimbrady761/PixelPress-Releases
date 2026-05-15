@@ -1,16 +1,20 @@
-# Pixel Press Releases
+# Pixel Press
 
 [![Website](https://img.shields.io/badge/website-ghostlyinc.com-0969da?logo=firefoxbrowser&logoColor=white)](https://ghostlyinc.com/en-us/tools/pixel-press/)
 [![Windows Store](https://img.shields.io/badge/Windows-Microsoft%20Store-0078d4?logo=microsoftstore&logoColor=white)](https://apps.microsoft.com/detail/9NRMXB13BBN7)
 [![Ubuntu .deb](https://img.shields.io/github/v/release/Nix1983/PixelPress-Releases?label=Ubuntu%20%2F%20Debian%20.deb&logo=ubuntu&logoColor=white&color=e95420)](https://github.com/Nix1983/PixelPress-Releases/releases/latest)
+[![User Wiki](https://img.shields.io/badge/docs-user%20wiki-2ea44f)](https://github.com/Nix1983/PixelPress-Releases/wiki)
 [![License](https://img.shields.io/badge/license-proprietary-6f42c1)](#license)
 
-Public downloads for Pixel Press, a local image optimizer from Ghostly Inc.
+Pixel Press is a desktop app for making local images smaller without uploading
+them. Add files or folders, choose WebP and/or AVIF output, tune quality, and
+write optimized files into a separate output folder.
 
-Pixel Press compresses images on your own machine. Your files stay local:
-no upload, no cloud processing, no account required.
+This repository is the public release home for Pixel Press. It contains Linux
+release downloads, release notes, issue forms, and user documentation. The
+application source code is private.
 
-## Get Pixel Press
+## Download
 
 | Platform | Download |
 |:--|:--|
@@ -18,8 +22,30 @@ no upload, no cloud processing, no account required.
 | Ubuntu / Debian Linux | [Download the latest `.deb` package](https://github.com/Nix1983/PixelPress-Releases/releases/latest) |
 | Product page | [ghostlyinc.com/en-us/tools/pixel-press](https://ghostlyinc.com/en-us/tools/pixel-press/) |
 
-Windows users should install Pixel Press from the Microsoft Store. Linux builds
-are published here as public release artifacts.
+## Documentation
+
+The full user guide is available in the [Pixel Press Wiki](https://github.com/Nix1983/PixelPress-Releases/wiki).
+
+Good starting points:
+
+- [Getting Started](https://github.com/Nix1983/PixelPress-Releases/wiki/Getting-Started)
+- [Installation and Updates](https://github.com/Nix1983/PixelPress-Releases/wiki/Installation-and-Updates)
+- [Converting Images](https://github.com/Nix1983/PixelPress-Releases/wiki/Converting-Images)
+- [Supported Formats and Quality](https://github.com/Nix1983/PixelPress-Releases/wiki/Supported-Formats-and-Quality)
+- [Output Files and Folders](https://github.com/Nix1983/PixelPress-Releases/wiki/Output-Files-and-Folders)
+- [Windows and Linux Differences](https://github.com/Nix1983/PixelPress-Releases/wiki/Windows-and-Linux)
+- [Pixel Press Pro](https://github.com/Nix1983/PixelPress-Releases/wiki/Pixel-Press-Pro)
+- [Troubleshooting](https://github.com/Nix1983/PixelPress-Releases/wiki/Troubleshooting)
+
+## Bugs and Feature Requests
+
+Use GitHub Issues to report bugs or request user-facing improvements:
+
+- [Report a bug](https://github.com/Nix1983/PixelPress-Releases/issues/new?template=bug_report.yml)
+- [Request a feature](https://github.com/Nix1983/PixelPress-Releases/issues/new?template=feature_request.yml)
+
+Please do not upload private photos, customer files, license information,
+passwords, or other secrets in public issues.
 
 ## What It Does
 
@@ -29,6 +55,8 @@ are published here as public release artifacts.
 - Choose WebP and/or AVIF output.
 - Keep unsupported or broken files out of the conversion instead of crashing.
 - Save optimized files into a separate output folder.
+- Preserve folder structure for folder-based runs.
+- Show size savings, output file counts, and conversion duration after a run.
 
 ## Supported Formats
 
@@ -41,15 +69,12 @@ Available formats can depend on the bundled ImageMagick runtime used by the
 build. The app only enables output formats that are supported by the current
 runtime.
 
-## Ubuntu / Debian Installation
+## Ubuntu / Debian Install
 
 Download and install the latest `PixelPress-linux-x64.deb` package:
 
 ```bash
 wget -O /tmp/PixelPress-linux-x64.deb https://github.com/Nix1983/PixelPress-Releases/releases/latest/download/PixelPress-linux-x64.deb
-```
-
-```bash
 sudo apt install /tmp/PixelPress-linux-x64.deb
 ```
 
@@ -66,9 +91,6 @@ the existing version:
 
 ```bash
 wget -O /tmp/PixelPress-linux-x64.deb https://github.com/Nix1983/PixelPress-Releases/releases/latest/download/PixelPress-linux-x64.deb
-```
-
-```bash
 sudo apt install /tmp/PixelPress-linux-x64.deb
 ```
 
@@ -78,11 +100,32 @@ sudo apt install /tmp/PixelPress-linux-x64.deb
 sudo apt remove pixelpress
 ```
 
-## About This Repository
+## What Pixel Press Expects
 
-This repository intentionally contains only public release notes and downloadable
-Linux release artifacts. The application source code lives in a private
-repository.
+Pixel Press is designed for local image optimization jobs where you want a fresh
+optimized copy and the original files left untouched.
+
+The most reliable inputs are:
+
+- JPEG and PNG images from cameras, websites, design exports, and screenshots.
+- Existing WebP or AVIF images that you want to recompress or convert.
+- Folders that contain supported images directly or in subfolders.
+- Images that ImageMagick can read on the current runtime.
+
+Pixel Press ignores unsupported, unreadable, or broken files instead of treating
+them as a failed conversion for the whole batch.
+
+## Platform Notes
+
+Windows users should install Pixel Press from the Microsoft Store. The Store also
+handles Pixel Press Pro purchases and updates.
+
+Ubuntu/Debian users can install the `.deb` package from this repository. Linux
+builds are unlimited for normal batch conversion and do not require a Microsoft
+Store purchase.
+
+On Windows, drag and drop is supported. On Linux, use the file and folder picker
+buttons from inside the app.
 
 ## License
 

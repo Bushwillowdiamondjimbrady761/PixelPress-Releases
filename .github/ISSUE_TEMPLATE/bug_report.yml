@@ -1,0 +1,138 @@
+name: Bug report
+description: Report something in Pixel Press that is not working as expected.
+title: "[Bug]: "
+labels:
+  - bug
+  - needs triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a Pixel Press issue.
+
+        Before submitting, please check the [Troubleshooting guide](https://github.com/Nix1983/PixelPress-Releases/wiki/Troubleshooting). Do not upload private photos, customer files, license details, passwords, or other secrets.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Where did the problem happen?
+      options:
+        - Windows
+        - Ubuntu / Debian Linux
+        - Both Windows and Linux
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Pixel Press version
+      description: Use the version shown in Pixel Press or the release you installed.
+      placeholder: "Example: 1.4.5.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: What is affected?
+      options:
+        - Installation or update
+        - Selecting files or folders
+        - Drag and drop
+        - Folder scanning or subfolders
+        - Output folder or output files
+        - WebP conversion
+        - AVIF conversion
+        - Quality settings
+        - Windows Free / Pro limit
+        - Microsoft Store purchase
+        - Snake challenge
+        - Linux desktop behavior
+        - Documentation
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect Pixel Press to do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead? Include exact error messages if you saw any.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: List the smallest set of steps that reproduce the issue.
+      placeholder: |
+        1. Open Pixel Press
+        2. Add ...
+        3. Choose ...
+        4. Start conversion
+        5. See ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: input_details
+    attributes:
+      label: Input details
+      description: Describe the kind of images involved without uploading private originals.
+      placeholder: |
+        File types: JPEG, PNG, WebP, AVIF
+        Approximate image count:
+        Approximate image dimensions:
+        Folder or individual files:
+        Include subfolders on/off:
+
+  - type: textarea
+    id: output_details
+    attributes:
+      label: Output settings
+      description: Include the output options used when the issue happened.
+      placeholder: |
+        Output formats: WebP, AVIF, or both
+        WebP quality:
+        AVIF quality:
+        Output folder:
+        Windows plan: Free or Pro, if relevant
+
+  - type: textarea
+    id: linux_desktop
+    attributes:
+      label: Linux desktop details
+      description: Linux only. Paste the output of these commands if relevant.
+      render: shell
+      placeholder: |
+        echo $XDG_CURRENT_DESKTOP
+        echo $XDG_SESSION_TYPE
+        echo $DESKTOP_SESSION
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Add screenshots, logs, or notes. Please remove sensitive information first.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked the Troubleshooting guide.
+          required: true
+        - label: I removed or avoided uploading private images, passwords, license details, and other secrets.
+          required: true

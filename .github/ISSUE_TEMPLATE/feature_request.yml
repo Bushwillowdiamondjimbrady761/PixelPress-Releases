@@ -14,7 +14,8 @@ body:
         the current friction, and what a better Pixel Press experience would
         look like.
 
-        Please do not upload private photos, customer files, license details, passwords, or other secrets.
+        Please do not upload private photos, customer files, license details,
+        passwords, or other secrets.
 
   - type: dropdown
     id: platform
@@ -76,14 +77,19 @@ body:
     id: context
     attributes:
       label: Additional context
-      description: Add screenshots, examples, or links if they help explain the request.
+      description: >-
+        Add screenshots, examples, or links if they help explain the request.
 
   - type: checkboxes
     id: checklist
     attributes:
       label: Before submitting
       options:
-        - label: This is a user-facing request, not a request for source code or private implementation details.
+        - label: >-
+            This is a user-facing request, not a request for source code or
+            private implementation details.
           required: true
-        - label: I removed or avoided uploading private images, sensitive screenshots, passwords, license details, and other secrets.
+        - label: >-
+            I removed or avoided uploading private images, sensitive screenshots,
+            passwords, license details, and other secrets.
           required: true

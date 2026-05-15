@@ -2,7 +2,9 @@ blank_issues_enabled: false
 contact_links:
   - name: Read the Pixel Press user guide
     url: https://github.com/Nix1983/PixelPress-Releases/wiki
-    about: Start here for installation, conversion, output folders, formats, Pro, and troubleshooting.
+    about: >-
+      Start here for installation, conversion, output folders, formats, Pro, and
+      troubleshooting.
   - name: Download the latest release
     url: https://github.com/Nix1983/PixelPress-Releases/releases/latest
     about: Make sure you are using the newest available Pixel Press release.

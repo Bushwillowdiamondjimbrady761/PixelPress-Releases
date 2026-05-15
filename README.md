@@ -1,9 +1,9 @@
 # Pixel Press
 
-[![Website](https://img.shields.io/badge/website-ghostlyinc.com-0969da?logo=firefoxbrowser&logoColor=white)](https://ghostlyinc.com/en-us/tools/pixel-press/)
-[![Windows Store](https://img.shields.io/badge/Windows-Microsoft%20Store-0078d4?logo=microsoftstore&logoColor=white)](https://apps.microsoft.com/detail/9NRMXB13BBN7)
-[![Ubuntu .deb](https://img.shields.io/github/v/release/Nix1983/PixelPress-Releases?label=Ubuntu%20%2F%20Debian%20.deb&logo=ubuntu&logoColor=white&color=e95420)](https://github.com/Nix1983/PixelPress-Releases/releases/latest)
-[![User Wiki](https://img.shields.io/badge/docs-user%20wiki-2ea44f)](https://github.com/Nix1983/PixelPress-Releases/wiki)
+[![Website][badge-website]][product-page]
+[![Windows Store][badge-windows-store]][windows-store]
+[![Ubuntu .deb][badge-ubuntu-deb]][latest-release]
+[![User Wiki][badge-user-wiki]][wiki]
 [![License](https://img.shields.io/badge/license-proprietary-6f42c1)](#license)
 
 Pixel Press is a local desktop image optimizer for turning JPEG, PNG, WebP, and
@@ -21,31 +21,31 @@ application source code is private.
 
 | Platform | Download |
 |:--|:--|
-| Windows | [Install from Microsoft Store](https://apps.microsoft.com/detail/9NRMXB13BBN7) |
-| Ubuntu / Debian Linux | [Download the latest `.deb` package](https://github.com/Nix1983/PixelPress-Releases/releases/latest) |
-| Product page | [ghostlyinc.com/en-us/tools/pixel-press](https://ghostlyinc.com/en-us/tools/pixel-press/) |
+| Windows | [Install from Microsoft Store][windows-store] |
+| Ubuntu / Debian Linux | [Download the latest `.deb` package][latest-release] |
+| Product page | [ghostlyinc.com/en-us/tools/pixel-press][product-page] |
 
 ## Documentation
 
-The full user guide is available in the [Pixel Press Wiki](https://github.com/Nix1983/PixelPress-Releases/wiki).
+The full user guide is available in the [Pixel Press Wiki][wiki].
 
 Good starting points:
 
-- [Getting Started](https://github.com/Nix1983/PixelPress-Releases/wiki/Getting-Started)
-- [Installation and Updates](https://github.com/Nix1983/PixelPress-Releases/wiki/Installation-and-Updates)
-- [Converting Images](https://github.com/Nix1983/PixelPress-Releases/wiki/Converting-Images)
-- [Supported Formats and Quality](https://github.com/Nix1983/PixelPress-Releases/wiki/Supported-Formats-and-Quality)
-- [Output Files and Folders](https://github.com/Nix1983/PixelPress-Releases/wiki/Output-Files-and-Folders)
-- [Windows and Linux Differences](https://github.com/Nix1983/PixelPress-Releases/wiki/Windows-and-Linux)
-- [Pixel Press Pro](https://github.com/Nix1983/PixelPress-Releases/wiki/Pixel-Press-Pro)
-- [Troubleshooting](https://github.com/Nix1983/PixelPress-Releases/wiki/Troubleshooting)
+- [Getting Started][wiki-getting-started]
+- [Installation and Updates][wiki-installation]
+- [Converting Images][wiki-converting]
+- [Supported Formats and Quality][wiki-formats]
+- [Output Files and Folders][wiki-output]
+- [Windows and Linux Differences][wiki-platforms]
+- [Pixel Press Pro][wiki-pro]
+- [Troubleshooting][wiki-troubleshooting]
 
 ## Bugs and Feature Requests
 
 Use GitHub Issues to report bugs or request user-facing improvements:
 
-- [Report a bug](https://github.com/Nix1983/PixelPress-Releases/issues/new?template=bug_report.yml)
-- [Request a feature](https://github.com/Nix1983/PixelPress-Releases/issues/new?template=feature_request.yml)
+- [Report a bug][new-bug]
+- [Request a feature][new-feature]
 
 Please do not upload private photos, customer files, license information,
 passwords, or other secrets in public issues.
@@ -77,7 +77,8 @@ runtime.
 Download and install the latest `PixelPress-linux-x64.deb` package:
 
 ```bash
-wget -O /tmp/PixelPress-linux-x64.deb https://github.com/Nix1983/PixelPress-Releases/releases/latest/download/PixelPress-linux-x64.deb
+wget -O /tmp/PixelPress-linux-x64.deb \
+  https://github.com/Nix1983/PixelPress-Releases/releases/latest/download/PixelPress-linux-x64.deb
 sudo apt install /tmp/PixelPress-linux-x64.deb
 ```
 
@@ -93,7 +94,8 @@ Download the newest `.deb` package from the latest release and install it over
 the existing version:
 
 ```bash
-wget -O /tmp/PixelPress-linux-x64.deb https://github.com/Nix1983/PixelPress-Releases/releases/latest/download/PixelPress-linux-x64.deb
+wget -O /tmp/PixelPress-linux-x64.deb \
+  https://github.com/Nix1983/PixelPress-Releases/releases/latest/download/PixelPress-linux-x64.deb
 sudo apt install /tmp/PixelPress-linux-x64.deb
 ```
 
@@ -136,3 +138,22 @@ Pixel Press is proprietary software by Ghostly Inc. This release repository is
 not an open-source source-code repository, and no open-source license is granted
 for the application source or binaries unless a separate license agreement says
 otherwise.
+
+[badge-website]: https://img.shields.io/badge/website-ghostlyinc.com-0969da?logo=firefoxbrowser&logoColor=white
+[badge-windows-store]: https://img.shields.io/badge/Windows-Microsoft%20Store-0078d4?logo=microsoftstore&logoColor=white
+[badge-ubuntu-deb]: https://img.shields.io/github/v/release/Nix1983/PixelPress-Releases?label=Ubuntu%20%2F%20Debian%20.deb&logo=ubuntu&logoColor=white&color=e95420
+[badge-user-wiki]: https://img.shields.io/badge/docs-user%20wiki-2ea44f
+[product-page]: https://ghostlyinc.com/en-us/tools/pixel-press/
+[windows-store]: https://apps.microsoft.com/detail/9NRMXB13BBN7
+[latest-release]: https://github.com/Nix1983/PixelPress-Releases/releases/latest
+[wiki]: https://github.com/Nix1983/PixelPress-Releases/wiki
+[wiki-getting-started]: https://github.com/Nix1983/PixelPress-Releases/wiki/Getting-Started
+[wiki-installation]: https://github.com/Nix1983/PixelPress-Releases/wiki/Installation-and-Updates
+[wiki-converting]: https://github.com/Nix1983/PixelPress-Releases/wiki/Converting-Images
+[wiki-formats]: https://github.com/Nix1983/PixelPress-Releases/wiki/Supported-Formats-and-Quality
+[wiki-output]: https://github.com/Nix1983/PixelPress-Releases/wiki/Output-Files-and-Folders
+[wiki-platforms]: https://github.com/Nix1983/PixelPress-Releases/wiki/Windows-and-Linux
+[wiki-pro]: https://github.com/Nix1983/PixelPress-Releases/wiki/Pixel-Press-Pro
+[wiki-troubleshooting]: https://github.com/Nix1983/PixelPress-Releases/wiki/Troubleshooting
+[new-bug]: https://github.com/Nix1983/PixelPress-Releases/issues/new?template=bug_report.yml
+[new-feature]: https://github.com/Nix1983/PixelPress-Releases/issues/new?template=feature_request.yml

@@ -10,9 +10,12 @@ body:
       value: |
         Thanks for reporting a Pixel Press issue.
 
-        Before submitting, please check the [Troubleshooting guide](https://github.com/Nix1983/PixelPress-Releases/wiki/Troubleshooting).
+        Before submitting, please check the [Troubleshooting guide][troubleshooting].
 
-        Do not upload private photos, customer files, license details, passwords, or other secrets.
+        Do not upload private photos, customer files, license details,
+        passwords, or other secrets.
+
+        [troubleshooting]: https://github.com/Nix1983/PixelPress-Releases/wiki/Troubleshooting
 
   - type: dropdown
     id: platform
@@ -91,7 +94,9 @@ body:
     id: input_details
     attributes:
       label: Input details
-      description: Describe the kind of images involved without uploading private or sensitive originals.
+      description: >-
+        Describe the kind of images involved without uploading private or
+        sensitive originals.
       placeholder: |
         File types: JPEG, PNG, WebP, AVIF
         Approximate image count:
@@ -126,7 +131,9 @@ body:
     id: extra
     attributes:
       label: Additional context
-      description: Add screenshots, logs, or notes. Please remove sensitive information first.
+      description: >-
+        Add screenshots, logs, or notes. Please remove sensitive information
+        first.
 
   - type: checkboxes
     id: checklist
@@ -135,5 +142,7 @@ body:
       options:
         - label: I checked the Troubleshooting guide.
           required: true
-        - label: I removed or avoided uploading private images, sensitive screenshots, passwords, license details, and other secrets.
+        - label: >-
+            I removed or avoided uploading private images, sensitive screenshots,
+            passwords, license details, and other secrets.
           required: true

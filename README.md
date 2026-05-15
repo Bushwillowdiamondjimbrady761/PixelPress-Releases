@@ -2,7 +2,7 @@
 
 [![Website][badge-website]][product-page]
 [![Windows Store][badge-windows-store]][windows-store]
-[![Debian release][badge-debian-release]][debian-deb]
+[![Debian release][badge-debian-release]][latest-release]
 [![User Wiki][badge-user-wiki]][wiki]
 [![License](https://img.shields.io/badge/license-proprietary-6f42c1)](#license)
 

